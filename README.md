@@ -1,4 +1,5 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Esse é meu projeto que está sendo desenvolvido aplicando alguns de meus conhecimentos como APIs, NextJS entre outros 
+O projeto é um site onde você pode checar as informações de todos os campeões do League Of Legends, um jogo
 
 ## Getting Started
 

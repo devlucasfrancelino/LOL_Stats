@@ -1,3 +1,4 @@
+import Link from "next/link";
 import "../header.css";
 
 function HeaderApp() {
@@ -5,7 +6,9 @@ function HeaderApp() {
     <main>
       <div id="header">
         <h1 id="classContent">LoL Stats</h1>
-        <button id="classContent">COMECE JÁ</button>
+        <Link href={"/champions"}>
+          <button id="classContent">COMECE JÁ</button>
+        </Link>
       </div>
       <div className="bar">
         <br></br>

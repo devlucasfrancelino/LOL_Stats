@@ -1,0 +1,33 @@
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 5rem;
+    padding-block: 2rem;
+    color:#C89B3C;
+    background-color: #0a1428;
+    font-weight: bold;
+}
+
+h1#classContent {
+    text-align: center;
+}
+
+button#classContent {
+    background: none;
+    color: #C89B3C;
+    font-size: 1rem;
+    padding-inline: 0.9rem;
+    padding-block: 0.5rem;
+    border: #C89B3C 2px solid;
+    border-radius: 4px;
+} button#classContent:hover {
+    background: #C89B3C;
+    color: #0A1428;
+    transition: 0.2s ease-in-out;
+}
+
+.bar {
+    background-color: #C89B3C;
+    height: 0.7rem;
+}

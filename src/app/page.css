@@ -1,0 +1,72 @@
+.mainContainer {
+  background: rgb(10, 20, 40);
+  background: linear-gradient(
+      180deg,
+      rgba(10, 20, 40, 0.99015756302521) 0%,
+      rgba(7, 7, 83, 0.869) 100%
+    ),
+
+      url("https://wallpapergod.com/images/hd/league-of-legends-1920X1080-wallpaper-8kudvpx4hxtb2uj4.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100vh;
+}
+
+.homeContent {
+  width: 100%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: 50vh 7vh;
+  gap: 2rem;
+  margin-top: 3vh;
+}
+
+.homeContent div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5vw;
+}
+
+.homeContent p {
+  font-weight: bold;
+  text-align: start;
+  color: azure;
+  font-size: 7vh;
+  margin-left: 4vw;
+  margin-right: 29vh;
+  align-self: center;
+}
+
+.homeContent button {
+  background-color: #051c49fc;
+  color: #c89b3c;
+  width: fit-content;
+  padding-inline: 1.2rem;
+  padding-block: 0.7rem;
+  border-radius: 0.5rem;
+  margin-left: 8.4vh;
+  margin-top: 2.8rem;
+  font-size: 1.5vw;
+  border: #C89B3C 2px solid;
+  border-radius: 20px;
+} .homeContent button:hover {
+  background: #C89B3C;
+  color: #0A1428;
+  transition: 0.2s ease-in-out;
+}
+
+.homeContent img {
+  max-width: 40vw;
+  height: auto;
+  border-radius: 140px 0px 0px 140px;
+  position: relative;
+  background: linear-gradient(
+    180deg,
+    rgba(10, 20, 40, 0.99015756302521) 0%,
+    rgba(7, 7, 83, 0.869) 100%
+  );
+  border: 5px solid #c89b3c;
+  justify-content: start;
+  margin-top: 10vh;
+}

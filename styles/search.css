@@ -1,11 +1,12 @@
 .mainContainer {
-    overflow: hidden 
+    overflow: hidden
 }
 
 .searchArea { 
     display: flex;
     justify-content: center; 
-    align-items: end; 
+    align-items: end;
+    min-width: 10vw; 
     width: 26vw;
     height: 20vh; 
     margin-inline: auto; 
@@ -18,8 +19,8 @@
 .search {
     height: 81.6%;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
     margin-top: 15vh;
 }
 
@@ -32,20 +33,34 @@
 }
 
 .search input {
+    max-width: 20vw;
     font-size: 1.7vw;
-    margin-bottom: 15px;
     color: #C89B3C;
+    font-weight: 700;
     border-radius: 5px;
+    padding-block: 10px;
+    border-radius: 100px;
 } .search input::placeholder {
     font-size: 1.2vw; 
-    text-align: center;
     color: rgb(134, 134, 134); 
 }
 
 .search-bar { 
-    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1c3d80fc;
+    border-radius: 15px;
 }
 
 .search-bar input {
     border: none;
+    background-color: #1c3d80fc;
+} .search-bar input:focus {
+    outline: none;
+}
+
+.icon {
+    width: 2vh;
+    padding-inline: 10px;
 }

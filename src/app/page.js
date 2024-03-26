@@ -1,9 +1,8 @@
 import Link from "next/link";
-import HeaderApp from "../../components/Header/header";
+import HeaderApp from "../../components/header";
 import "../app/page.css";
 
 export default function Home() {
-
 
   return (
     <main className="mainContainer">

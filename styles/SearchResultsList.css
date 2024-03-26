@@ -1,0 +1,25 @@
+.results-list {
+    width: 100%;
+    background-color: #1c3d80fc;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 8px #001141;
+    border-radius: 10px;
+    margin-top: 1rem;
+    max-height: 300px;
+    overflow-y: scroll;
+}
+
+.searchResult {
+    color: #C89B3C;
+    padding: 5px;
+} .searchResult:hover {
+    background-color: #032058fc;
+    
+}
+
+
+::-webkit-scrollbar-thumb {
+    background-color: #C89B3C;
+}
+

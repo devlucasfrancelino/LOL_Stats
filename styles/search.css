@@ -7,10 +7,10 @@
     justify-content: center; 
     align-items: end;
     min-width: 10vw; 
-    width: 26vw;
-    height: 20vh; 
+    width: 30vw;
+    height: 50vh; 
     margin-inline: auto; 
-    margin-top: 25vh; 
+    margin-top: 17vh; 
     border-radius: 20px;
     background-color: #051c49fc;
 }
@@ -50,7 +50,7 @@
     align-items: center;
     justify-content: center;
     background-color: #1c3d80fc;
-    border-radius: 15px;
+    border-radius: 5px;
 }
 
 .search-bar input {

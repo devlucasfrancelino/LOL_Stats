@@ -1,16 +1,16 @@
 "use client";
 
-import { getChampions } from "../../../champions/getChampionsList";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import HeaderApp from "../../../components/header";
 import "../page.css";
 import "../../../styles/search.css";
-import { SearchBar } from "../../../components/SearchBar";
-import { SearchResultList } from "../../../components/SearchResultList";
+import SearchBar from "../../../components/SearchBar";
+import { SearchResultList } from "../../../components/SearchResultsList";
 
 export default function Search() {
 
   const [results, setResults] = useState([]);
+
   return (
     <main className="mainContainer">
       <HeaderApp />

@@ -70,3 +70,10 @@
   justify-content: start;
   margin-top: 10vh;
 }
+
+
+
+
+::-webkit-scrollbar-thumb {
+  background-color: #C89B3C;
+}

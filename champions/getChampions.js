@@ -11,7 +11,7 @@ export async function getChampions(value, setResults) {
                 value &&
                 champion &&
                 champion.name &&
-                champion.name.toLowerCase().includes(value)
+                champion.name.toLowerCase().includes(value.toLowerCase())
               );
             }
           );

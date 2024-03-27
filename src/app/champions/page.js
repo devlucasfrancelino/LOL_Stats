@@ -16,7 +16,7 @@ export default function Search() {
       <HeaderApp />
       <div className="searchArea">
         <div className="search">
-          <p>League Of Legends</p>
+          <p id="text">League Of Legends</p>
           <SearchBar setResults={setResults}/>
           <SearchResultList results={results} />
         </div>

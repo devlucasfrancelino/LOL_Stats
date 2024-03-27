@@ -21,21 +21,20 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 15vh;
 }
 
-.search p {
+#text {
     font-size: 1.6vw;
     font-weight: 800;
     justify-self: start;
-    color: #ffffff;
     margin-bottom: 15px;
+    color: #ffffff;
 }
 
 .search input {
     max-width: 20vw;
     font-size: 1.7vw;
-    color: #C89B3C;
+    color: #ffffff;
     font-weight: 700;
     border-radius: 5px;
     padding-block: 10px;
@@ -48,7 +47,6 @@
 .search-bar { 
     display: flex;
     align-items: center;
-    justify-content: center;
     background-color: #1c3d80fc;
     border-radius: 5px;
 }
@@ -63,4 +61,18 @@
 .icon {
     width: 2vh;
     padding-inline: 10px;
+}
+
+.searchResult {
+    display: flex;
+    align-items: center;
+}
+
+.searchResult img {
+    height: 40px;
+}
+
+.searchResult p {
+    color: #ffffff;
+    margin-left: 5px;
 }

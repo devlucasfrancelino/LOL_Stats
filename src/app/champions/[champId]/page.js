@@ -27,7 +27,7 @@ export default function ChampDetails({ params }) {
           <p>{champion.stats.hp}</p>
           <h2>Armor</h2>
           <p>{parseInt(champion.stats.armor + (level - 1) * champion.stats.armorperlevel)}</p>
-          <h2>Armor</h2>
+          <h2>Critico</h2>
           <p>{champion.stats.crit}</p>
           <h2>AD</h2>
           <p>{champion.stats.attackdamage}</p>

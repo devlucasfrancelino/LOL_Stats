@@ -4,37 +4,16 @@ import { useEffect, useState } from "react";
 import { getChampionsById } from "../../../../champions/getChampionsById";
 import HeaderApp from "../../../../components/header";
 import "../../page.css";
+import "../../../../styles/champion.css";
+import ChampionInfo from "../../../../components/championInfo";
 
 export default function ChampDetails({ params }) {
-  const [champion, setChampion] = useState();
-  const level = 1;
-
-  useEffect(() => {
-    async function fetchChampionDetails() {
-      const champion = await getChampionsById(params.champId, setChampion);
-    }
-    fetchChampionDetails();
-  }, [params.championId]);
+  const [champion, setChampion] = useState(null);
 
   return (
-    <main className="mainContainer">
-      <HeaderApp />
-      {champion && (
-        <div>
-        <img src={`https://ddragon.leagueoflegends.com/cdn/14.6.1/img/champion/${champion.id}.png`}></img>
-        <h1>{champion.name}</h1>
-          <h2>Vida</h2>
-          <p>{champion.stats.hp}</p>
-          <h2>Armor</h2>
-          <p>{parseInt(champion.stats.armor + (level - 1) * champion.stats.armorperlevel)}</p>
-          <h2>Critico</h2>
-          <p>{champion.stats.crit}</p>
-          <h2>AD</h2>
-          <p>{champion.stats.attackdamage}</p>
-          <h2>Attack Speed</h2>
-          <p>{champion.stats.crit}</p>
-        </div>
-      )}
+    <main className="mainPage">
+       <HeaderApp />
+       <ChampionInfo champion={params}/>
     </main>
   );
 }

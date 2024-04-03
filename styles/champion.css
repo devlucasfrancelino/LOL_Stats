@@ -1,0 +1,53 @@
+.mainPage {
+    background: rgb(10, 20, 40);
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.championInfo {
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px 30px 30px 30px;
+    background-color: rgb(7, 12, 28);
+    width: 30%;
+    min-height: 70vh;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.championData {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 18vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 24px 24px 0px 0px;
+}
+
+.championImg {
+    width: 100px;
+    height: auto; 
+    margin-right: 20px;
+}
+
+.championName {
+    display: flex;
+    flex-direction: column;
+}
+
+.championInfo h1 {
+    color: #fff;
+}
+
+.championInfo h2 {
+    color: #C8AA6E;
+}
+
+.championInfo p {
+    color: #e7dfce;
+}
+
+.icons {
+    height: 15px;
+}

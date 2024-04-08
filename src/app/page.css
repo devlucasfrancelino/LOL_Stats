@@ -1,5 +1,6 @@
 .mainContainer {
   background: rgb(10, 20, 40);
+  overflow-y: hidden;
   background: linear-gradient(
       180deg,
       rgba(28, 61, 128, 0.99) 0%,
@@ -70,5 +71,3 @@
   justify-content: start;
   margin-top: 10vh;
 }
-
-

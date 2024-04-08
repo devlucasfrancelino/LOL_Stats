@@ -61,66 +61,46 @@ export default function ChampionInfo(params) {
               </div>
             </div>
             <div className="championStats">
-              <img
-                className="icons"
-                src="https://static.wikia.nocookie.net/leagueoflegends/images/1/17/Health_icon.png"
-              ></img>
-              <h2>Vida</h2>
-              <p>{calculateLevelStats(hp, champion.stats.hpperlevel, level)}</p>
-              <img
-                className="icons"
-                src="https://static.wikia.nocookie.net/leagueoflegends/images/7/75/Attack_damage_icon.png"
-              ></img>
-              <h2>AD</h2>
-              <p>{attackdamage}</p>
-              <img
-                className="icons"
-                src="https://static.wikia.nocookie.net/leagueoflegends/images/0/0a/Ability_power_icon.png"
-              ></img>
-              <h2>AP</h2>
-              <p>{ap}</p>
-              <img
-                className="icons"
-                src="static.wikia.nocookie.net/leagueoflegends/images/f/f0/Armor_icon.png"
-              ></img>
-              <h2>Armor</h2>
-              <p>
-                {calculateLevelStats(
-                  armor,
-                  champion.stats.armorperlevel,
-                  level
-                )}
-              </p>
-              <img
-                className="icons"
-                src="static.wikia.nocookie.net/leagueoflegends/images/8/84/Magic_resistance_icon.png"
-              ></img>
-              <h2>MR</h2>
-              <p>
-                {calculateLevelStats(
-                  mr,
-                  champion.stats.spellblockperlevel,
-                  level
-                )}
-              </p>
-              <img
-                className="icons"
-                src="https://static.wikia.nocookie.net/leagueoflegends/images/1/17/Health_icon.png"
-              ></img>
-              <h2>Attack Speed</h2>
-              <p>{attackspeed}</p>
-              <img
-                className="icons"
-                src="https://static.wikia.nocookie.net/leagueoflegends/images/1/17/Health_icon.png"
-              ></img>
-              <h2>Aceleração de habilidade</h2>
-              <p>{abilityHaste}</p>
-              <img
-                className="icons"
-                src="https://static.wikia.nocookie.net/leagueoflegends/images/1/17/Health_icon.png"
-              ></img>
-              <h2>Critico</h2>
-              <p>{crit}</p>
+              <div className="stat">
+                <img className="icons" src="https://static.wikia.nocookie.net/leagueoflegends/images/1/17/Health_icon.png"></img>
+                <h2>Vida</h2>
+                <p> {calculateLevelStats(hp, champion.stats.hpperlevel, level)} </p>
+              </div>
+              <div className="stat">
+                <img className="icons" src="https://static.wikia.nocookie.net/leagueoflegends/images/7/75/Attack_damage_icon.png"></img>
+                <h2>AD</h2>
+                <p>{attackdamage}</p>
+              </div>
+              <div className="stat">
+                <img className="icons" src="https://static.wikia.nocookie.net/leagueoflegends/images/0/0a/Ability_power_icon.png"></img>
+                <h2>AP</h2>
+                <p>{ap}</p>
+              </div>
+              <div className="stat">
+                <img className="icons" src="https://static.wikia.nocookie.net/leagueoflegends/images/f/f0/Armor_icon.png"></img>
+                <h2>Armor</h2>
+                <p> {calculateLevelStats(armor,champion.stats.armorperlevel,level)} </p>
+              </div>
+              <div className="stat">
+                <img className="icons" src="https://static.wikia.nocookie.net/leagueoflegends/images/8/84/Magic_resistance_icon.png" ></img>
+                <h2>MR</h2>
+                <p> {calculateLevelStats(mr, champion.stats.spellblockperlevel, level)} </p>
+              </div>
+              <div className="stat">
+                <img className="icons" src="https://static.wikia.nocookie.net/leagueoflegends/images/9/91/Attack_speed_icon.png"></img>
+                <h2>Attack Speed</h2>
+                <p>{attackspeed}</p>
+              </div>
+              <div className="stat">
+                <img className="icons" src="https://static.wikia.nocookie.net/leagueoflegends/images/9/95/Cooldown_reduction_icon.png"></img>
+                <h2>Aceleração de habilidade</h2>
+                <p>{abilityHaste}</p>
+              </div>
+              <div className="stat">
+                <img className="icons" src="https://static.wikia.nocookie.net/leagueoflegends/images/c/c6/Critical_strike_chance_icon.png"></img>
+                <h2>Critico</h2>
+                <p>{crit}</p>
+              </div>
             </div>
           </div>
         </div>

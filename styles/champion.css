@@ -9,8 +9,8 @@
     flex-direction: column;
     border-radius: 30px 30px 30px 30px;
     background-color: rgb(7, 12, 28);
-    width: 30%;
-    min-height: 70vh;
+    width: 50%;
+    min-height: 60vh;
     margin-left: 50px;
     margin-top: 20px;
 }
@@ -48,6 +48,20 @@
     color: #e7dfce;
 }
 
+.championStats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.stat {
+    display: grid;
+    align-items: start;
+    
+    grid-template-columns: 1fr 1fr;
+
+}
+
 .icons {
     height: 15px;
 }
+

@@ -9,7 +9,7 @@ export const SearchResultList = ({ results }) => {
     <div className="results-list">
       {results.map((result, id) => {
         return (
-          <Link href={`/champions/${result.id}`}>
+          <Link key={id} href={`/champions/${result.id}`}>
             <SearchResult result={result} key={id} />
           </Link>
         );

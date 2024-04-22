@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: space-between;
     padding-inline: 5rem;
-    padding-block: 2rem;
+    padding-block: 1rem;
     color:#C89B3C;
     background-color: #0a1428;
     font-weight: bold;
@@ -11,6 +11,8 @@
 
 h1#classContent {
     text-align: center;
+    text-decoration: none;
+    color: #fca311;
 }
 
 button#classContent {
@@ -29,5 +31,5 @@ button#classContent {
 
 .bar {
     background-color: #C89B3C;
-    height: 0.7rem;
+    height: 0.2rem;
 }

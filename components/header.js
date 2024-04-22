@@ -5,7 +5,9 @@ function HeaderApp() {
   return (
     <main>
       <div id="header">
-        <h1 id="classContent">LoL Stats</h1>
+        <Link href={"/"}>
+          <h1 id="classContent">LoL Stats</h1>
+        </Link>
         <Link href={"/champions"}>
           <button id="classContent">COMECE JÁ</button>
         </Link>

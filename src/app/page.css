@@ -1,3 +1,8 @@
+body {
+  text-decoration: none;
+}
+
+
 .mainContainer {
   background: rgb(10, 20, 40);
   overflow-y: hidden;

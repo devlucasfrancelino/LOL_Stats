@@ -13,12 +13,17 @@ export default function ChampionInfo({ champion, id }) {
   // mr is equal to magic resist !!
   const [abilityHaste, setHabilityHaste] = useState(0);
   const [divStyle, setDivStyle] = useState();
-  const [input, setInput] = useState([]);
+  const [input, setInput] = useState();
   const [level, setLevel] = useState(1);	
 
-  const handleChange = (value) => {
-    setInput(value);
-    setLevel(value);
+  const handleChange = (parsedValue) => {
+    if (!isNaN(parsedValue) && parsedValue <= 18) {
+      setInput(parsedValue);
+      setLevel(parsedValue);
+    } else if (parsedValue > 18) {
+      setInput(18);
+      setLevel(18);
+    }
   };
 
   function calculateLevelStats(stat, statPerLevel, level) {
@@ -57,8 +62,7 @@ export default function ChampionInfo({ champion, id }) {
             </div>
             <div className="levelChange">
                 <p>Level</p>
-                <input placeholder="1-18" onChange={(e) => handleChange(e.target.value)}></input>
-
+                <input placeholder="1-18" onChange={(e) => handleChange(e.target.value)} value={input}></input>
             </div>
             <div className="championStats">
               <div className="stat">
@@ -68,13 +72,7 @@ export default function ChampionInfo({ champion, id }) {
                 ></img>
                 <h2>Vida</h2>
                 <br />
-                <p>
-                  {" "}
-                  {calculateLevelStats(
-                    hp,
-                    champion.data[id].stats.hpperlevel,
-                    level
-                  )}{" "}
+                <p>{Math.round(hp + (level - 1) * champion.data[id].stats.hpperlevel)}
                 </p>
               </div>
               <div className="stat">

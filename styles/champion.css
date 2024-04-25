@@ -7,19 +7,19 @@
 .main {
     display: flex;
     justify-content: center;
+    align-items: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
 }
 
 .championInfo {
-    margin-top: 10vh;
     display: flex;
     flex-direction: column;
+    min-width: 30vw;
     border-radius: 30px 30px 30px 30px;
     background-color: #102142;
-    min-width: 30vw;
-    height: 65vh;
+    margin-bottom: 7vh;
 }
 
 .championData {
@@ -60,6 +60,7 @@
 .championStats {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 50px;
 }
 
 .stat {

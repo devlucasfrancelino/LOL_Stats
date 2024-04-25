@@ -9,10 +9,15 @@
     font-weight: bold;
 }
 
-h1#classContent {
+#classContent {
     text-align: center;
     text-decoration: none;
     color: #fca311;
+}
+
+h1#classContent,
+button#classContent {
+    text-decoration: none; /* Remover a decoração */
 }
 
 button#classContent {
